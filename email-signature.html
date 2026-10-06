@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Email Signature — BuildingBridges</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F1EFE5;--card:#FAF8F1;--ink:#2B3229;--ink-soft:#565F52;--sage-deep:#47563E;--clay:#A9754C;--stone-line:#C9C2AD}
+body{margin:0;background:var(--paper);font-family:'Karla',sans-serif;color:var(--ink);padding:40px 24px}
+.page{max-width:680px;margin:0 auto}
+h1{font-family:'Newsreader',serif;font-weight:600;font-size:26px;margin:0 0 6px;letter-spacing:-0.01em}
+.sub{color:var(--ink-soft);font-size:14px;margin:0 0 30px;max-width:52ch;text-wrap:pretty}
+h2{font-family:'Karla',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;color:var(--clay);margin:34px 0 10px}
+.stage{background:#fff;border:1px solid var(--stone-line);padding:26px 24px}
+.steps{font-size:14px;color:var(--ink-soft);line-height:1.7;margin:0;padding-left:20px}
+.steps li{margin-bottom:6px}
+.steps code{background:var(--card);border:1px solid var(--stone-line);padding:1px 5px;font-size:12.5px;font-family:ui-monospace,monospace;color:var(--ink)}
+.note{font-size:13px;color:var(--ink-soft);background:var(--card);border-left:2px solid var(--clay);padding:12px 14px;margin-top:14px;line-height:1.6}
+a{color:var(--sage-deep)}
+a:hover{color:var(--clay)}
+</style></head><body>
+<div class="page">
+<h1>Your email signature</h1>
+<p class="sub">The block below is your live signature. Select it, copy, and paste it into your email client's signature settings — the whole thing links to your website.</p>
+
+<h2>SIGNATURE</h2>
+<div class="stage">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Georgia,'Times New Roman',serif"><tr>
+<td style="padding:0 16px 0 0;vertical-align:middle">
+<a href="https://buildingbridgespsychotherapy.netlify.app/" style="text-decoration:none"><img src="https://buildingbridgespsychotherapy.netlify.app/assets/bb-logo.png" width="62" height="51" alt="BuildingBridges" style="display:block;border:0"></a>
+</td>
+<td style="padding:0;vertical-align:middle;border-left:1px solid #C9C2AD;padding-left:16px">
+<a href="https://buildingbridgespsychotherapy.netlify.app/" style="text-decoration:none;color:#2B3229"><span style="font-family:Georgia,'Times New Roman',serif;font-size:17px;color:#2B3229;letter-spacing:-0.2px">BuildingBridges Psychotherapy</span></a><br>
+<span style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;letter-spacing:1.6px;color:#A9754C">STELIOS DESPOTAKIS</span><br>
+<span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#565F52;line-height:1.7"><span style="white-space:nowrap">Λεωφ. Βασ. Κωνσταντίνου 30, Αθήνα 116 35</span><br>
+<a href="tel:+306944963029" style="color:#565F52;text-decoration:none">(+30) 6944 96 30 29</a><br><a href="https://buildingbridgespsychotherapy.netlify.app/" style="color:#47563E;text-decoration:none">buildingbridgespsychotherapy.netlify.app</a></span>
+</td>
+</tr></table>
+</div>
+
+<h2>HOW TO INSTALL IT</h2>
+<ol class="steps">
+<li>Upload <code>assets/bb-logo.png</code> to your Netlify site so it lives at <code>https://buildingbridgespsychotherapy.netlify.app/assets/bb-logo.png</code>.</li>
+<li>Open this page in your browser, select the signature block above with your mouse, and copy it (<code>⌘C</code> / <code>Ctrl+C</code>).</li>
+<li>In Gmail: <em>Settings → See all settings → General → Signature → Create new</em>, then paste.</li>
+<li>In Apple Mail: <em>Settings → Signatures</em>, then paste (untick "Always match my default message font").</li>
+</ol>
+<div class="note"><strong>Why the upload matters:</strong> email clients can't read images from your computer — the logo has to sit on a public URL. Once uploaded, swap the image's <code>src</code> in your pasted signature to the full Netlify address, or simply paste after uploading and the address will already resolve.</div>
+</div>
+</body></html>
