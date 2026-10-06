@@ -1,0 +1,15 @@
+# Netlify response headers.
+# Files in recovered/ have content-hashed (or UUID) names, so a changed file
+# always gets a new URL and can be cached forever.
+/recovered/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# assets/ names are not versioned (bb-logo.png is hot-linked from the email
+# signature), so cache for a week rather than forever.
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
