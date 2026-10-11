@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="el"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Σύγκριση εκδόσεων</title>
+<style>
+*{box-sizing:border-box;margin:0}
+body{background:#DBD5C4;font-family:'Commissioner',sans-serif;color:#2B3229;padding:16px}
+.bar{display:flex;gap:8px;justify-content:center;margin-bottom:12px}
+.bar button{font:inherit;font-size:14px;padding:8px 18px;border-radius:999px;border:1px solid #47563E;background:transparent;color:#47563E;cursor:pointer}
+.bar button.on{background:#47563E;color:#F1EFE5}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.col{display:flex;flex-direction:column;gap:8px}
+.col h2{font-size:14px;font-weight:600;text-align:center;letter-spacing:.06em;text-transform:uppercase;color:#47563E}
+iframe{width:100%;height:calc(100vh - 110px);border:0;border-radius:12px;background:#DBD5C4}
+@media screen and (max-width:820px){.grid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<div class="bar"><button id="bel" class="on">Ελληνικά</button><button id="ben">English</button></div>
+<div class="grid">
+<div class="col"><h2>Αρχική έκδοση</h2><iframe id="a" src="Encounter-Groups-EL.html"></iframe></div>
+<div class="col"><h2>Νέα έκδοση (για ενδιαφερόμενους)</h2><iframe id="b" src="Encounter-Groups-EL-v2.html"></iframe></div>
+</div>
+<script>
+function set(l){a.src='Encounter-Groups-'+l+'.html';b.src='Encounter-Groups-'+l+'-v2.html';bel.classList.toggle('on',l==='EL');ben.classList.toggle('on',l==='EN');}
+bel.onclick=()=>set('EL');ben.onclick=()=>set('EN');
+</script>
+</body></html>

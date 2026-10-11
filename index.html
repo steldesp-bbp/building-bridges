@@ -4,7 +4,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BuildingBridges Psychotherapy — Mockup</title>
+<title>Ψυχοθεραπεία στην Αθήνα | BuildingBridges – Στέλιος Δεσποτάκης</title>
+<meta name="description" content="Προσωποκεντρική ψυχοθεραπεία στην Αθήνα και online με τον Στέλιο Δεσποτάκη: ατομικές συνεδρίες, ομάδες συνάντησης και προγράμματα mindfulness, στα Ελληνικά και στα Αγγλικά.">
 <link rel="preload" href="recovered/commissioner-greek.75d4734b.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="recovered/a87eac80-ff73-4a70-a294-d42f957d7d2c.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="recovered/ca371b29-30f5-4d1e-af5c-5d9ea5ab56fd.woff2" as="font" type="font/woff2" crossorigin>
@@ -246,8 +247,9 @@ nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;pad
 .lang-toggle{display:flex;border:1px solid var(--stone-line);border-radius:20px;overflow:hidden;flex-shrink:0}
 .lang-btn{font-family:'Karla','Commissioner',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.04em;background:transparent;border:none;cursor:pointer;padding:7px 13px;color:var(--ink-soft);transition:background .2s ease,color .2s ease}
 .lang-btn.active{background:var(--sage-deep);color:#FAF8F1}
-.nav-cta{font-family:'Karla','Commissioner',sans-serif;font-weight:600;font-size:14px;background:var(--sage-deep);color:#FAF8F1;padding:10px 18px;border-radius:var(--radius);text-decoration:none;letter-spacing:0.02em;white-space:nowrap;transition:background .2s ease}
-.nav-cta:hover{background:var(--ink)}
+.nav-right{position:relative}
+.nav-float-book{position:fixed;bottom:24px;right:24px;white-space:nowrap;box-shadow:0 4px 14px rgba(43,50,41,0.18);z-index:60}
+@media (max-width:720px){.nav-float-book{bottom:16px;right:16px;padding:11px 18px;font-size:14px}}
 .audio-toggle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--stone-line);background:transparent;color:var(--sage-deep);cursor:pointer;flex-shrink:0;transition:background .2s ease,color .2s ease}
 .audio-toggle:hover{background:var(--stone)}
 .audio-toggle.playing{background:var(--sage-deep);color:#FAF8F1;border-color:var(--sage-deep)}
@@ -258,7 +260,7 @@ html[lang="en"] .nav-links a{font-size:16px}
 @media (max-width:1150px){html[lang="en"] .nav-links a{font-size:14.5px}}
 @media (max-width:1000px){html[lang="en"] .nav-links a{font-size:13.5px}}
 @media (max-width:1150px){.nav-links{gap:14px}.nav-links a{font-size:13px}}
-@media (max-width:1000px){.nav-cta{padding:9px 14px;font-size:13px}.nav-right{gap:8px}nav .wrap{gap:10px}.nav-links{gap:11px}.nav-links a{font-size:12px}}
+@media (max-width:1000px){.nav-right{gap:8px}nav .wrap{gap:10px}.nav-links{gap:11px}.nav-links a{font-size:12px}}
 @media (max-width:880px){.nav-links{display:none}}
 @media (max-width:760px){.nav-links{display:none}}
 header.hero{padding:14px 0 280px;position:relative;overflow:hidden;isolation:isolate}
@@ -287,7 +289,7 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:22px}
 .venn-circle{position:absolute;width:190px;height:190px;border-radius:50%;mix-blend-mode:multiply;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;box-sizing:border-box}
 .venn-circle span{font-family:'Karla','Commissioner',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.02em;color:#fff;mix-blend-mode:normal}
 .venn-c1{background:var(--sage);top:0;left:8px}
-.venn-c1,.venn-c2{align-items:flex-start;padding-top:52px}
+.venn-c1,.venn-c2{align-items:flex-start;padding-top:64px}
 .venn-c1 span{max-width:100px;transform:translateX(-8px)}
 .venn-c2{background:var(--clay);top:0;right:8px}
 .venn-c2 span{max-width:100px;transform:translateX(16px)}
@@ -324,13 +326,12 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:22px}
 .mbct-list.open{display:flex}
 .svc-card-clickable{cursor:pointer;transition:box-shadow .2s ease}
 .svc-card-clickable:hover{box-shadow:0 8px 22px rgba(43,50,41,0.12)}
-.svc-card-hint{font-size:13px;color:var(--clay);font-weight:600;padding:0 22px}
+.svc-card-hint{font-size:13px;color:var(--clay);font-weight:600;padding:0 22px;margin-top:auto}
 .mbct-list li{padding-left:20px;position:relative;font-size:15px;color:var(--ink-soft)}
 .mbct-list li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--clay)}
 .mbct-cta::before,.mbct-heading::before{display:none}
 .mbct-list b{color:var(--ink);font-weight:700}
 @media (max-width:720px){.svc-cards{grid-template-columns:1fr}}
-.doc-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .carousel-wrap{position:relative;margin-bottom:36px}
 .carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;scrollbar-width:none;padding-bottom:4px}
 .carousel::-webkit-scrollbar{display:none}
@@ -348,9 +349,8 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:22px}
 .doc-card:hover{border-color:var(--sage);transform:translateY(-2px)}
 .doc-card .doc-icon{color:var(--clay)}
 .doc-card .doc-title{font-family:'Newsreader','Noto Serif',serif;font-size:16.5px}
-.doc-card .doc-sub{font-size:13px;color:var(--ink-soft)}
 .contact-panel{background:var(--sage-deep);color:#F3F1E6;border-radius:var(--radius);padding:46px 40px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px}
-.contact-panel h2{color:#F3F1E6}
+.contact-panel h2{color:#F3F1E6;font-size:clamp(21px,2.6vw,26px);margin-bottom:16px}
 .contact-panel .lede{color:#D7E0CD}
 .contact-list{list-style:none;margin-top:6px}
 .contact-list li{padding:14px 0;border-top:1px solid rgba(255,255,255,0.18);font-size:15px}
@@ -363,11 +363,12 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:22px}
 .map-frame iframe{width:100%;height:100%;border:0;display:block}
 .map-caption{margin-top:10px;font-size:14px;font-weight:600;color:var(--sage-deep)}
 footer{padding:34px 0 50px;text-align:center;font-size:13px;color:var(--ink-soft)}
+@media (max-width:720px){footer{padding-bottom:80px}}
 .hero-word .accent{font-style:normal}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-@media (max-width:720px){.bio-layout{grid-template-columns:1fr}.portrait-frame{position:static;width:140px}.doc-cards{grid-template-columns:1fr}.contact-panel{grid-template-columns:1fr;padding:32px 24px}.nav-cta{display:none}}
+@media (max-width:720px){.bio-layout{grid-template-columns:1fr}.portrait-frame{position:static;width:140px}.contact-panel{grid-template-columns:1fr;padding:32px 24px}}
 
 .menu-btn{display:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--stone-line);background:transparent;color:var(--ink);align-items:center;justify-content:center;cursor:pointer;padding:0;flex-shrink:0}
 .menu-btn:hover{background:var(--stone)}
@@ -375,6 +376,8 @@ footer{padding:34px 0 50px;text-align:center;font-size:13px;color:var(--ink-soft
 .menu-btn .i-close{display:none}
 nav.menu-open .menu-btn .i-open{display:none}
 nav.menu-open .menu-btn .i-close{display:block}
+@media (min-width:721px) and (max-width:880px){#therapy .lede{white-space:normal!important;max-width:none}}
+@media (min-width:721px) and (max-width:1039px){#gallery{width:calc(100% - 56px)!important;height:auto!important;aspect-ratio:1032/452}#gallery img:nth-of-type(1){left:1.066%!important;top:1.327%!important;width:41.47%!important;height:62.61%!important}#gallery img:nth-of-type(2){left:43.9%!important;top:1.327%!important;width:26.74%!important;height:42.26%!important}#gallery img:nth-of-type(3){left:1.066%!important;top:67.04%!important;width:20.06%!important;height:30.31%!important}#gallery img:nth-of-type(4){left:22.48%!important;top:67.04%!important;width:20.06%!important;height:30.31%!important}#gallery img:nth-of-type(5){left:43.9%!important;top:46.68%!important;width:54.84%!important;height:50.66%!important}#gallery img:nth-of-type(6){left:72%!important;top:1.327%!important;width:26.74%!important;height:42.26%!important}}
 @media (max-width:720px){
 nav .wrap{grid-template-columns:minmax(0,1fr) auto;padding:10px 16px;gap:10px}
 .brand{font-size:15px;gap:8px}
@@ -432,6 +435,7 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 <a class="i18n" data-el="Ο Θεραπευτής" data-en="The Therapist" href="#about"></a>
 <a class="i18n" data-el="Υπηρεσίες" data-en="Services" href="#services"></a>
 <a class="i18n" data-el="Ο Χώρος" data-en="The Space" href="#space"></a>
+<a class="i18n" data-el="Εμπειρίες Πελατών" data-en="Testimonials" href="#testimonials"></a>
 <a class="i18n" data-el="Επικοινωνία" data-en="Contact" href="#contact"></a>
 </div>
 <div class="nav-right">
@@ -443,14 +447,14 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 <button class="lang-btn active" data-lang="el">EL</button>
 <button class="lang-btn" data-lang="en">EN</button>
 </div>
-<a class="nav-cta i18n" data-el="Κλείστε ραντεβού" data-en="Book a session" href="https://calendar.app.google/Zda8UAaarmtFzJBR8" target="_blank" rel="noopener"></a>
 <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><svg class="i-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="i-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
 </div>
 </div>
 </nav>
+<a class="btn-primary nav-float-book i18n" data-el="Κλείστε Ραντεβού" data-en="Book an appointment" href="https://calendar.app.google/Zda8UAaarmtFzJBR8" target="_blank" rel="noopener"></a>
 
 <header class="hero" style="height:500px">
-<img class="hero-bg" src="recovered/hero-bridge.0b4f61eb.webp" srcset="recovered/hero-bridge-sm.9cb57c77.webp 1100w, recovered/hero-bridge.0b4f61eb.webp 1600w" sizes="(max-width:720px) 600px, 100vw" width="1600" height="1059" alt="" fetchpriority="high">
+<img class="hero-bg" src="recovered/hero-bridge.0b4f61eb.webp" srcset="recovered/hero-bridge-xs.e9807bdb.webp 720w, recovered/hero-bridge-sm.9cb57c77.webp 1100w, recovered/hero-bridge.0b4f61eb.webp 1600w" sizes="(max-width:720px) 400px, 100vw" width="1600" height="1059" alt="" fetchpriority="high">
 <div class="wrap">
 <div class="hero-word" id="heroWord">
 <span class="i18n" data-el="χτίζω&lt;span class='accent'&gt;:&lt;/span&gt; οικοδομώ, δημιουργώ, αναπτύσσω" data-en="to build&lt;span class='accent'&gt;:&lt;/span&gt; to construct, to create, to develop&lt;br&gt;"></span>
@@ -471,14 +475,14 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 <p class="lede i18n" data-el="Μια διαδικασία ανάπτυξης του έμφυτου δυναμικού του ατόμου προς μια ζωή που το εκφράζει." data-en="A process of growing the innate potential of the person, toward a life that expresses them." style="white-space:nowrap"></p>
 <div class="venn-wrap">
 <div class="venn">
-<div class="venn-circle venn-c1"><span class="i18n" data-el="&lt;u&gt;Ενσυναίσθηση&lt;/u&gt; σε ακούω σε βάθος" data-en="&lt;u&gt;Empathy&lt;/u&gt; listening&lt;br&gt;deeply"></span></div>
-<div class="venn-circle venn-c2"><span class="i18n" data-el="&lt;u&gt;Θετική Θεώρηση&lt;/u&gt;&lt;br&gt;σε αποδέχομαι όπως είσαι" data-en="&lt;u&gt;Acceptance&lt;/u&gt; unconditional, without judgment"></span></div>
-<div class="venn-circle venn-c3"><span class="i18n" data-el="&lt;u&gt;Αυθεντικότητα&lt;br&gt;&lt;/u&gt;ως ο εαυτός μου,&lt;br&gt;μαζί σου" data-en="&lt;u&gt;Genuineness&lt;br&gt;&lt;/u&gt;being myself,&lt;br&gt;with you"></span></div>
+<div class="venn-circle venn-c1"><span class="i18n" data-el="&lt;u&gt;Ενσυναίσθηση&lt;/u&gt;&lt;br&gt;σε ακούω σε βάθος" data-en="&lt;u&gt;Empathy&lt;/u&gt; listening&lt;br&gt;deeply"></span></div>
+<div class="venn-circle venn-c2"><span class="i18n" data-el="&lt;u&gt;Αποδοχή&lt;/u&gt;&lt;br&gt;χωρίς να κρίνω" data-en="&lt;u&gt;Acceptance&lt;/u&gt;&lt;br&gt;without judgment"></span></div>
+<div class="venn-circle venn-c3"><span class="i18n" data-el="&lt;u&gt;Αυθεντικότητα&lt;/u&gt;&lt;br&gt;ως ο εαυτός μου&lt;br&gt;μαζί σου" data-en="&lt;u&gt;Genuineness&lt;br&gt;&lt;/u&gt;being myself&lt;br&gt;with you"></span></div>
 </div>
 <p class="venn-caption i18n" data-el="Οι τρεις προϋποθέσεις που, όταν συνυπάρχουν,&lt;br&gt;ανοίγουν το δρόμο για αλλαγή και ανάπτυξη." data-en="Three conditions which, held together,&lt;br&gt;open the way for change and growth."></p>
 </div>
 <div class="body-text">
-<p style="margin:0;text-align:justify" class="i18n" data-el="Η προσωποκεντρική προσέγγιση βασίζεται στην ιδέα ότι οι άνθρωποι έχουν μια έμφυτη τάση προς την ανάπτυξη και την αυτογνωσία, και ότι αυτή η δυναμική ξεκλειδώνεται καλύτερα όχι μέσα από συμβουλές ή κρίσεις, αλλά μέσα από μια σχέση που χαρακτηρίζεται από γνήσια ενσυναίσθηση, άνευ όρων αποδοχή (της μοναδικότητας του κάθε ατόμου χωρίς επίκριση) και αυθεντικότητα (το να είναι ο θεραπευτής ανοιχτός και ειλικρινής, ολόκληρα ο εαυτός του, αντί να κρύβεται πίσω από ένα επαγγελματικό προσωπείο).&lt;br&gt;&lt;br&gt;Αναπτύχθηκε από τον Αμερικάνο ψυχολόγο Carl Rogers τις δεκαετίες του 40' και του 50', ανατρέποντας το παράδειγμα της εποχής. Το ιατρικό μοντέλο αντιμετωπίζει το άτομο ως κάποιον που πρέπει να διαγνωστεί, να «διορθωθεί» ή να καθοδηγηθεί από μια αυθεντία. Ο Ρότζερς εισήγαγε την έννοια ότι μπορούμε να δούμε το άτομο ως ειδικό της δικής του ζωής, με ύψιστη αρχή το βίωμα. Στην πράξη, αυτό σημαίνει ενεργητική ακρόαση, κατανόηση όσων εκφράζει, αντανάκλαση χωρίς προσωπική ερμηνεία, και εμπιστοσύνη στην ικανότητά του να βρει τις δικές του απαντήσεις και κατεύθυνση.&lt;br&gt;&lt;br&gt;Είναι μια προσέγγιση που έχει επηρεάσει όχι μόνο τον κλάδο της συμβουλευτικής και της ψυχοθεραπείας, αλλά και τομείς όπως η εκπαίδευση, η νοσηλευτική, η κοινωνική εργασία, και τον τρόπο που οι οργανισμοί σκέφτονται τη φροντίδα πελατών και ασθενών γενικότερα. Στον πυρήνα της περιγράφει πως λειτουργούν οι ανθρώπινες σχέσεις. Οποιαδήποτε σχέση μπορεί να είναι θεραπευτική-αναπτυξιακή, αρκεί να συνυπάρχουν οι παραπάνω συνθήκες.&lt;br&gt;&lt;br&gt;" data-en="The person-centred approach rests on the idea that people have an innate tendency toward growth and self-awareness, and that this potential is best unlocked not through advice or judgment, but through a relationship marked by genuine empathy (allowing oneself to be touched by what is being shared and receiving it with understanding), unconditional positive regard (accepting the person without conditions or criticism), and congruence (the helper being honest and authentic rather than hiding behind a professional facade).&lt;br&gt;&lt;br&gt;It was developed by American psychologist Carl Rogers in the 1940s and '50s, shifting the paradigm of its time. Where the medical model treated the person as someone to be diagnosed, &amp;quot;fixed&amp;quot;, or directed by an authority figure, he introduced the idea that we can see each person as the expert of their own life, with our organismic experience as the ultimate guide. In practice, this means listening deeply, reflecting back what someone expresses, and trusting them to find their own answers and direction, rather than imposing solutions from outside&lt;br&gt;&lt;br&gt;It's an approach that has influenced not only counselling and psychotherapy, but also fields such as education, nursing, social work, how organisations think about client and patient care. At its core it describes how human relationships function more broadly, so any relationship can be healing-developmental as long as the aforementioned conditions are there.&lt;br&gt;"></p>
+<p style="margin:0;text-align:justify" class="i18n" data-el="Η προσωποκεντρική προσέγγιση βασίζεται στην ιδέα ότι οι άνθρωποι έχουν μια έμφυτη τάση προς την ανάπτυξη και την αυτογνωσία, και ότι αυτή η δυναμική ξεκλειδώνεται καλύτερα όχι μέσα από συμβουλές ή κρίσεις, αλλά μέσα από μια σχέση που χαρακτηρίζεται από γνήσια ενσυναίσθηση, άνευ όρων αποδοχή (της μοναδικότητας του κάθε ατόμου χωρίς επίκριση) και αυθεντικότητα (το να είναι ο θεραπευτής ανοιχτός και ειλικρινής, ολόκληρα ο εαυτός του, αντί να κρύβεται πίσω από ένα επαγγελματικό προσωπείο).&lt;br&gt;&lt;br&gt;Αναπτύχθηκε από τον Αμερικάνο ψυχολόγο Carl Rogers τις δεκαετίες του 40' και του 50', ανατρέποντας το παράδειγμα της εποχής. Το ιατρικό μοντέλο αντιμετωπίζει το άτομο ως κάποιον που πρέπει να διαγνωστεί, να «διορθωθεί» ή να καθοδηγηθεί από μια αυθεντία. Ο Ρότζερς εισήγαγε την έννοια ότι μπορούμε να δούμε το άτομο ως ειδικό της δικής του ζωής, με ύψιστη αρχή το βίωμα. Στην πράξη, αυτό σημαίνει ενεργητική ακρόαση, κατανόηση όσων εκφράζει, αντανάκλαση χωρίς προσωπική ερμηνεία, και εμπιστοσύνη στην ικανότητά του να βρει τις δικές του απαντήσεις και κατεύθυνση.&lt;br&gt;&lt;br&gt;Είναι μια προσέγγιση που έχει επηρεάσει όχι μόνο τον κλάδο της συμβουλευτικής και της ψυχοθεραπείας, αλλά και τομείς όπως η εκπαίδευση, η νοσηλευτική, η κοινωνική εργασία, και τον τρόπο που οι οργανισμοί σκέφτονται τη φροντίδα πελατών και ασθενών γενικότερα. Στον πυρήνα της περιγράφει πως λειτουργούν οι ανθρώπινες σχέσεις. Οποιαδήποτε σχέση μπορεί να είναι θεραπευτική-αναπτυξιακή, αρκεί να συνυπάρχουν οι παραπάνω συνθήκες.&lt;br&gt;&lt;br&gt;" data-en="The person-centred approach rests on the idea that people have an innate tendency toward growth and self-awareness, and that this potential is best unlocked not through advice or judgment, but through a relationship marked by genuine empathy (allowing oneself to be touched by what is being shared and receiving it with understanding), unconditional positive regard (accepting the person without conditions or criticism), and congruence (the helper being honest and authentic rather than hiding behind a professional facade).&lt;br&gt;&lt;br&gt;It was developed by American psychologist Carl Rogers in the 1940s and '50s, shifting the paradigm of its time. The medical model is used to treating the person as someone to be diagnosed, &amp;quot;fixed&amp;quot;, or directed by an authority. Rogers introduced the idea that we can see each person as the expert of their own life, with lived experience as the ultimate guide. In practice, this means active listening, understanding what is being expressed and reflecting it back without interpretation, and trusting in people’s ability to find their own answers and direction without imposing solutions from outside.&lt;br&gt;&lt;br&gt;It's an approach that has influenced not only counselling and psychotherapy, but also fields such as education, nursing, social work, and how organisations think about client and patient care. Fundamentally, it illuminates how human relationships work, so any relationship can be therapeutic and growth-promoting as long as the three aforementioned conditions are present.&lt;br&gt;"></p>
 </div>
 </div>
 </section>
@@ -498,7 +502,7 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 <h3 class="i18n" data-el="Διαδρομή" data-en="MY JOURNEY"></h3>
 <p style="text-align:justify" class="i18n" data-el="Γεννήθηκα το 1988 και μεγάλωσα στην Αθήνα. Πήγα σχολείο στο Κολλέγιο Ψυχικού με υποτροφία και στα 17 μου έφυγα για σπουδές στο εξωτερικό. Εκεί έζησα περίπου μία δεκαετία. Αγγλία, Αυστραλία, Νότια Αφρική, Βερολίνο, Νοτιοανατολική Ασία, κάθε τόπος κι ένα κεφάλαιο." data-en="I was born in 1988 and grew up in Athens, Greece. I attended the Hellenic-American Educational Foundation on a scholarship, did an International Baccalaureate, and at 17 left to study abroad. I lived overseas for close to a decade. England, Australia, South Africa, Southeast Asia, Berlin, each place a different chapter."></p>
 <p style="text-align:justify" class="i18n" data-el="Το πρώτο μου πτυχίο ήταν σε Engineering Mathematics (BEng) στο University of Bristol, με πρόγραμμα ανταλλαγής στο University of Western Australia, ενώ ύστερα ξεκίνησα Μεταπτυχιακό στη διδασκαλία των Μαθηματικών (PGCE) στο University of Oxford, το οποίο αποφάσισα να διακόψω για ιδεολογικούς λόγους." data-en="My first degree was in Engineering Mathematics (BEng) at the University of Bristol, with an exchange programme at the University of Western Australia. I then began a postgraduate teaching qualification in Mathematics (PGCE) at the University of Oxford, which I chose to leave for ideological reasons."></p>
-<p style="text-align:justify" class="i18n" data-el="Σε διαδικασία αυτοαναζήτησης πέρασα το επόμενο καλοκαίρι στην Khayelitsa, μια παραγκούπολη της Νοτίου Αφρικής, όπου δίδασκα μαθηματικά εθελοντικά, και άλλον ένα χρόνο στην Άπω Ανατολή, όπου μέσω workaway δοκίμασα μια πιο απλή ζωή κοντά στη φύση, καλλιεργώντας τη γη και μαθαίνοντας για τη γιόγκα και το διαλογισμό.&lt;br&gt;" data-en="In a period of self-exploration I spent the following summer in Khayelitsha, a township in South Africa, teaching mathematics as a volunteer, and another year in the Far East, where I tried a simpler life close to nature, working the land and learning about yoga and meditation."></p>
+<p style="text-align:justify" class="i18n" data-el="Σε διαδικασία αυτοαναζήτησης πέρασα το επόμενο καλοκαίρι στην Khayelitsa, μια παραγκούπολη της Νοτίου Αφρικής, όπου δίδασκα μαθηματικά εθελοντικά, και άλλον ένα χρόνο στην Άπω Ανατολή, όπου μέσω workaway δοκίμασα μια πιο απλή ζωή κοντά στη φύση, καλλιεργώντας τη γη και μαθαίνοντας για τη γιόγκα και το διαλογισμό.&lt;br&gt;" data-en="In a period of self-exploration I spent the following summer in Khayelitsha, a township in South Africa, teaching mathematics voluntarily, and another year in the Far East, where I tried a simpler life close to nature, working the land and learning about yoga and meditation."></p>
 <p style="text-align:justify" class="i18n" data-el="Επί χρόνια εργάστηκα ως μαθηματικός, αλλά αυτό που με ενδιέφερε πραγματικά ήταν η παιδεία, πώς θα μπορούσαν τα σχολεία να εφοδιάζουν πιο ουσιαστικά τους ανθρώπους για το μέλλον. 'Ετσι, ασχολήθηκα με τη δημοκρατική /ελευθεριακή εκπαίδευση, δούλεψα στο Demokratische Schule X του Βερολίνου, συμμετείχα σε συνέδρια και συνίδρυσα το ελληνικό European Democratic Education Community." data-en="For several years I taught mathematics for a living, but what really interested me was education, how schools could more meaningfully prepare people for the future. Hence, I got involved in democratic/libertarian education, worked at Demokratische Schule X in Berlin, and co-founded the Greek Chapter of the European Democratic Education Community."></p>
 <p style="margin:0;text-align:justify" class="i18n" data-el="Επιστρέφοντας στην Ελλάδα ξεκίνησα νέο κύκλο σπουδών και από το 2015 έχω αφιερωθεί στην Ψυχοθεραπεία" data-en="Upon my return to Greece I began a new cycle of studies, and since 2015 I have dedicated myself to the field of psychotherapy."></p>
 </div>
@@ -522,6 +526,10 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 <li class="i18n" data-el="&lt;u&gt;Investing for Purpose&lt;/u&gt;&lt;br&gt;Σύμβουλος ψυχικής υγείας για εταιρίες start-up με κοινωνικό, περιβαλλοντικό και εκπαιδευτικό αντίκτυπο" data-en="&lt;u&gt;Investing for Purpose&lt;/u&gt;&lt;br&gt;Mental health consultant for start-ups with social, environmental and educational impact"></li>
 </ul>
 </div>
+<div style="display:flex;justify-content:center"><a class="doc-card" style="display:inline-flex;flex-direction:row;align-items:center;gap:8px;padding:8px 16px;margin-top:4px" href="docs/CV-Despotakis-EL.html" data-href-el="docs/CV-Despotakis-EL.html" data-href-en="docs/CV-Despotakis.html" target="_blank" rel="noopener">
+<span class="doc-icon">✦</span>
+<span class="doc-title">CV</span>
+</a></div>
 </div>
 </div>
 </div>
@@ -533,7 +541,7 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 <div class="wrap reveal">
 <p class="eyebrow i18n" data-el="Τι προσφέρω" data-en="What I offer"></p>
 <h2 class="i18n" data-el="Υπηρεσίες" data-en="Services"></h2>
-<p class="lede i18n" data-el="Όλες οι υπηρεσίες παρέχονται online και δια ζώσης — στα Ελληνικά και στα Αγγλικά." data-en="All services are offered online and in person — in Greek and in English." style="max-width:none;white-space:nowrap"></p>
+<p class="lede i18n" data-el="Όλες οι υπηρεσίες παρέχονται online και δια ζώσης" data-en="All services are offered both online and in person" style="max-width:none;white-space:nowrap"></p>
 <div class="svc-cards">
 <div class="svc-card svc-card-clickable" id="individualCard">
 <div class="svc-photo sketch tint-1"><svg viewBox="0 0 400 300" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M110 100V190H190M110 190V225M190 190V225"></path><path d="M290 100V190H210M290 190V225M210 190V225"></path><path d="M50 245h300" opacity="0.35" stroke-dasharray="3 8"></path></svg></div>
@@ -556,15 +564,17 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 </div>
 <ul class="mbct-list" id="individualList">
 <li class="i18n mbct-heading" style="font-size:18px;padding-left:0" data-el="&lt;b&gt;Ατομικές Συνεδρίες&lt;/b&gt;" data-en="&lt;b&gt;Individual Sessions&lt;/b&gt;"></li>
-<li class="i18n" data-el="Διάρκεια: 45-50 λεπτά, μία φορά την εβδομάδα" data-en="Session length: 50 minutes, once a week"></li>
+<li class="i18n" data-el="Διάρκεια: 45-50 λεπτά, μία φορά την εβδομάδα" data-en="Session length: 45-50 minutes, once a week"></li>
 <li class="i18n" data-el="Διαθέσιμες δια ζώσης στο γραφείο ή online" data-en="Available in person at the office or online"></li>
 <li class="i18n" data-el="Πρώτη συνάντηση χωρίς δέσμευση, για να δούμε αν ταιριάζουμε" data-en="A no-commitment first meeting, to see if we're a good fit"></li>
+<li class="mbct-cta" style="border-bottom:none;padding-top:14px;padding-left:0;list-style:none"><a class="btn-primary i18n" style="display:inline-block" data-el="Θεραπευτικό Συμβόλαιο: Πως δουλεύω" data-en="Counselling Contract: How I work" href="docs/Counselling-Contract-2026-EL.html" data-href-el="docs/Counselling-Contract-2026-EL.html" data-href-en="docs/Counselling-Contract-2026.html" target="_blank" rel="noopener"></a></li>
 </ul>
 <ul class="mbct-list" id="groupsList">
 <li class="i18n mbct-heading" style="font-size:18px;padding-left:0" data-el="&lt;b&gt;Ομάδες Συνάντησης&lt;/b&gt;" data-en="&lt;b&gt;Encounter Groups&lt;/b&gt;"></li>
 <li class="i18n" data-el="Μικρές, κλειστές ομάδες έως 8 ατόμων" data-en="Small, closed groups of up to 8 people"></li>
-<li class="i18n" data-el="Συναντήσεις μία φορά την εβδομάδα, διάρκειας 90 λεπτών" data-en="Weekly meetings, 90 minutes each"></li>
+<li class="i18n" data-el="Συναντήσεις μία φορά την εβδομάδα, διάρκειας 90 λεπτών" data-en="Weekly or Biweekly meetings, 90 minutes each"></li>
 <li class="i18n" data-el="Δια ζώσης στο γραφείο, σε κλίμα εμπιστοσύνης και σεβασμού" data-en="In person at the office, in a climate of trust and respect"></li>
+<li class="mbct-cta" style="border-bottom:none;padding-top:14px;padding-left:0;list-style:none"><a class="btn-primary i18n" style="display:inline-block" data-el="Πώς λειτουργούν οι Ομάδες Συνάντησης" data-en="How Encounter Groups Work" href="docs/Encounter-Groups-EL-v2.html" data-href-el="docs/Encounter-Groups-EL-v2.html" data-href-en="docs/Encounter-Groups-EN-v2.html" target="_blank" rel="noopener"></a></li>
 </ul>
 <ul class="mbct-list" id="mbctList">
 <li class="i18n mbct-heading" style="font-size:18px;padding-left:0" data-el="&lt;b&gt;Προγράμματα Mindfulness&lt;/b&gt;" data-en="&lt;b&gt;Courses&lt;/b&gt;"></li>
@@ -630,31 +640,12 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 </div>
 <div class="carousel-nav" id="carouselDots"></div>
 </div>
-</div></section>
-
-<section id="resources">
-<div class="wrap reveal">
-<p class="eyebrow i18n" data-el="Πληροφορίες" data-en="Information"></p>
-<h2 class="i18n" data-el="Χρήσιμα έγγραφα" data-en="Useful documents"></h2>
-<div class="doc-cards">
-<a class="doc-card" href="docs/Counselling-Contract-2026.pdf" target="_blank" rel="noopener">
-<span class="doc-icon">✦</span>
-<span class="doc-title i18n" data-el="Θεραπευτικό Συμβόλαιο" data-en="Therapy Contract"></span>
-<span class="doc-sub i18n" data-el="Πλαίσιο και όροι συνεργασίας" data-en="Framework and terms of our work together"></span>
-</a>
-<a class="doc-card" href="docs/Client-Reviews.pdf" target="_blank" rel="noopener">
+<div style="display:flex;justify-content:center"><a class="doc-card" style="display:inline-flex;flex-direction:row;align-items:center;gap:8px;padding:8px 16px" href="docs/Client-Reviews.html" data-href-el="docs/Client-Reviews.html" data-href-en="docs/Client-Reviews-EN.html" target="_blank" rel="noopener">
 <span class="doc-icon">✦</span>
 <span class="doc-title i18n" data-el="Αξιολογήσεις Πελατών" data-en="Client Reviews"></span>
-<span class="doc-sub i18n" data-el="Εμπειρίες ανθρώπων που συνεργάστηκαν μαζί μου" data-en="Experiences from people I've worked with"></span>
-</a>
-<a class="doc-card" href="docs/CV-Despotakis.pdf" target="_blank" rel="noopener">
-<span class="doc-icon">✦</span>
-<span class="doc-title i18n" data-el="Πλήρες Βιογραφικό" data-en="Full CV"></span>
-<span class="doc-sub i18n" data-el="Σπουδές, εκπαίδευση, εμπειρία" data-en="Studies, training, experience"></span>
-</a>
-</div>
-</div>
-</section>
+</a></div>
+</div></section>
+
 
 <section id="contact">
 <div class="wrap reveal">
@@ -662,13 +653,12 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 <div>
 <p class="eyebrow i18n" style="color:#B9C7AE" data-el="Επικοινωνία" data-en="Contact"></p>
 <h2 class="i18n" data-el="Γιατί να δουλέψουμε μαζί;" data-en="Why work together?"></h2>
-<p class="lede i18n" style="font-size:15px;font-style:normal" data-el="Θεωρώ πως είμαι ευαίσθητος, αξιόπιστος και ανοιχτός σε αυτά που ακούω. Ωστόσο, δεν υπάρχει καλύτερος τρόπος να διαπιστώσει κανείς αν ταιριάζουμε από μία συνάντηση γνωριμίας." data-en="I consider myself sensitive, trustworthy, and open to what I hear. That said, there's no better way to find out if we're a good fit than to arrange an introductory meeting."></p>
+<p class="lede i18n" style="font-size:15px;font-style:normal" data-el="Θεωρώ πως είμαι ευαίσθητος, αξιόπιστος και ανοιχτός σε αυτά που ακούω. Ωστόσο, δεν υπάρχει καλύτερος τρόπος να διαπιστώσει κανείς αν ταιριάζουμε από μία συνάντηση γνωριμίας.&lt;br&gt;&lt;br&gt;Μη διστάσετε να επικοινωνήσετε μαζί μου για οποιαδήποτε απορία." data-en="I consider myself sensitive, trustworthy, and open to what I hear. That said, there's no better way to find out if we are a good match than meeting in person.&lt;br&gt;&lt;br&gt;Feel free to contact me if you have any queries."></p>
 </div>
 <ul class="contact-list">
 <li><span class="label i18n" data-el="Διεύθυνση" data-en="Address"></span><span class="i18n" data-el="Λεωφ. Βασ. Κωνσταντίνου 30, Αθήνα 116 35" data-en="Leof. Vas. Konstantinou 30, Athens 116 35"></span></li>
 <li><span class="label i18n" data-el="Τηλέφωνο" data-en="Phone"></span><a href="tel:+306944963029">(+30) 6944 96 30 29</a></li>
 <li><span class="label i18n" data-el="Email" data-en="Email"></span><a href="mailto:bbridges.therapy@gmail.com">bbridges.therapy@gmail.com</a></li>
-<li style="border-bottom:none;padding-top:22px"><a class="btn-primary i18n" style="display:table;white-space:nowrap;margin:0" data-el="Κλείστε Ραντεβού" data-en="Book an appointment" href="https://calendar.app.google/Zda8UAaarmtFzJBR8" target="_blank" rel="noopener"></a></li>
 </ul>
 </div>
 </div>
@@ -695,12 +685,13 @@ document.documentElement.lang=lang;
 document.querySelectorAll('.i18n').forEach(function(el){var txt=el.getAttribute('data-'+lang);if(txt!==null)el.innerHTML=txt});
 document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.dataset.lang===lang)});
 document.querySelectorAll('[data-alt-'+lang+']').forEach(function(el){el.alt=el.getAttribute('data-alt-'+lang)});
+document.querySelectorAll('[data-href-'+lang+']').forEach(function(el){el.href=el.getAttribute('data-href-'+lang)});
 }
 document.querySelectorAll('.lang-btn').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang)})});
 setLang('el');
 (function(){var pairs=[['individualCard','individualList'],['groupsCard','groupsList'],['mbctCard','mbctList']];var mq=window.matchMedia('(max-width:720px)');var last=document.getElementById('mbctList');var home=last.parentNode,homeNext=last.nextSibling;
 function restore(){pairs.forEach(function(p){home.insertBefore(document.getElementById(p[1]),homeNext)})}
-pairs.forEach(function(p){var card=document.getElementById(p[0]);card.addEventListener('click',function(){var list=document.getElementById(p[1]);var wasOpen=list.classList.contains('open');pairs.forEach(function(q){document.getElementById(q[1]).classList.remove('open')});if(!wasOpen){if(mq.matches)card.insertAdjacentElement('afterend',list);else restore();list.classList.add('open')}})});
+pairs.forEach(function(p){var card=document.getElementById(p[0]);card.addEventListener('click',function(){var list=document.getElementById(p[1]);var wasOpen=list.classList.contains('open');pairs.forEach(function(q){document.getElementById(q[1]).classList.remove('open')});if(!wasOpen){if(mq.matches)card.insertAdjacentElement('afterend',list);else restore();list.classList.add('open');setTimeout(function(){var r=list.getBoundingClientRect(),nav=document.querySelector('nav'),nh=nav?nav.getBoundingClientRect().height:0;if(r.bottom>window.innerHeight-16){var d=Math.min(r.bottom-window.innerHeight+24,r.top-nh-16);if(d>0)window.scrollBy({top:d,behavior:'smooth'})}},60)}})});
 (mq.addEventListener?mq.addEventListener('change',function(e){if(!e.matches)restore()}):mq.addListener(function(e){if(!e.matches)restore()}));})();
 var audio=document.getElementById('bgAudio');
 var audioBtn=document.getElementById('audioToggle');

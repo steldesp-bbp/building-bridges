@@ -1,1 +1,9 @@
 *:Zone.Identifier
+_work/
+*Zone.Identifier
+node_modules/
+.DS_Store
+*.zip
+
+# Local Netlify folder
+.netlify

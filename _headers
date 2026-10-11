@@ -13,3 +13,15 @@
   Cache-Control: public, max-age=0, must-revalidate
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
+
+# docs/ filenames are not versioned (PDFs and HTML pages are edited in place).
+/docs/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Basic security headers for every path. No CSP: the page relies on inline
+# scripts/styles and embeds a Google Maps iframe.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
