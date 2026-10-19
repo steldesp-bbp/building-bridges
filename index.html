@@ -331,7 +331,14 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:22px}
 .svc-card-hint{font-size:13px;color:var(--clay);font-weight:600;padding:0 22px;margin-top:auto}
 .mbct-list li{padding-left:20px;position:relative;font-size:15px;color:var(--ink-soft)}
 .mbct-list li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--clay)}
-.mbct-cta::before,.mbct-heading::before{display:none}
+.mbct-cta::before,.mbct-heading::before,.mbct-intro::before,.mbct-courses::before{display:none}
+.mbct-list li.mbct-intro,.mbct-list li.mbct-courses{padding-left:0}
+.mbct-courses{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}
+.mbct-course{border-top:1px solid var(--stone-line);padding-top:10px}
+.mbct-course p{margin:0}
+.mbct-name{font-family:'Newsreader','Noto Serif',serif;font-weight:500;font-size:18px;line-height:1.3;color:var(--ink)}
+.mbct-meta{font-weight:700;font-size:13px;letter-spacing:0.02em;color:var(--clay);margin:4px 0 2px!important}
+@media (max-width:560px){.mbct-courses{grid-template-columns:1fr}}
 .mbct-list b{color:var(--ink);font-weight:700}
 @media (max-width:720px){.svc-cards{grid-template-columns:1fr}}
 .carousel-wrap{position:relative;margin-bottom:36px}
@@ -579,11 +586,8 @@ html[lang="el"] .hero-word > span > br:first-child{display:none}
 <li class="mbct-cta" style="border-bottom:none;padding-top:14px;padding-left:0;list-style:none"><a class="btn-primary i18n" style="display:inline-block" data-el="Πώς λειτουργούν οι Ομάδες Συνάντησης" data-en="How Encounter Groups Work" href="docs/Encounter-Groups-EL-v2.html" data-href-el="docs/Encounter-Groups-EL-v2.html" data-href-en="docs/Encounter-Groups-EN-v2.html" target="_blank" rel="noopener"></a></li>
 </ul>
 <ul class="mbct-list" id="mbctList">
-<li class="i18n mbct-heading" style="font-size:18px;padding-left:0" data-el="&lt;b&gt;Προγράμματα Mindfulness&lt;/b&gt;" data-en="&lt;b&gt;Courses&lt;/b&gt;"></li>
-<li class="i18n" data-el="&lt;u&gt;&lt;b&gt;Introducing Mindfulness&lt;/b&gt;&lt;/u&gt; (3 συναντήσεις - 1 ώρα)&lt;br&gt;Μια σύντομη εισαγωγή" data-en="&lt;u&gt;&lt;b&gt;Introducing Mindfulness&lt;/b&gt;&lt;/u&gt; (3 sessions - 1 hour)&lt;br&gt;A brief introduction"></li>
-<li class="i18n" data-el="&lt;u&gt;&lt;b&gt;Mindfulness for Life&lt;/b&gt;&lt;/u&gt; (8 συναντήσεις - 2 ώρες 15 λεπτά &amp; Ημέρα Πρακτικής 5 ωρών) Κατάλληλο για το ευρύ κοινό" data-en="&lt;u&gt;&lt;b&gt;Mindfulness for Life&lt;/b&gt;&lt;/u&gt; (8 sessions - 2 hours 15 minutes &amp; a 5-hour Practice Day) Suitable for the general public"></li>
-<li class="i18n" data-el="&lt;u&gt;&lt;b&gt;Finding Peace in a Frantic World&lt;/b&gt;&lt;/u&gt; (6 συναντήσεις - 1 ώρα 30 λεπτά)&lt;br&gt;Για όσους βρίσκονται συχνά υπό πίεση χρόνου και υποχρεώσεων" data-en="&lt;u&gt;&lt;b&gt;Finding Peace in a Frantic World&lt;/b&gt;&lt;/u&gt; (6 sessions - 1 hour 30 minutes)&lt;br&gt;For those leading busy lives, burdened by obligations and time constraints"></li>
-<li class="i18n" data-el="&lt;u&gt;&lt;b&gt;MBCT for Depression&lt;/b&gt;&lt;/u&gt; (8 συναντήσεις - 2 ώρες)&lt;u&gt;&lt;br&gt;&lt;/u&gt;Για όσους αισθάνονται ότι μπορεί να περνάνε ή έχουν ιστορικό κατάθλιψης" data-en="&lt;u&gt;&lt;b&gt;MBCT for Depression&lt;/b&gt;&lt;/u&gt; (8 sessions - 2 hours)&lt;u&gt;&lt;br&gt;&lt;/u&gt;For those who feel they may be going through, or have a history of, depression"></li>
+<li class="i18n mbct-intro" data-el="Στις εβδομαδιαίες συναντήσεις μας θα μάθετε πρακτικές διαλογισμού και γνωσιακές-συμπεριφορικές τεχνικές που μπορείτε να χρησιμοποιείτε για όλη σας τη ζωή." data-en="In our weekly meetings you will learn meditation practices and cognitive-behavioural techniques you can use for the rest of your life."></li>
+<li class="mbct-courses"><div class="mbct-course"><p class="mbct-name">Introducing Mindfulness</p><p class="mbct-meta i18n" data-el="3 συναντήσεις · 1 ώρα" data-en="3 sessions · 1 hour"></p><p class="i18n" data-el="Μια σύντομη εισαγωγή" data-en="A brief introduction"></p></div><div class="mbct-course"><p class="mbct-name">Mindfulness for Life</p><p class="mbct-meta i18n" data-el="8 συναντήσεις · 2 ώρες 15 λεπτά &amp; Ημέρα Πρακτικής 5 ωρών" data-en="8 sessions · 2 hours 15 minutes &amp; a 5-hour Practice Day"></p><p class="i18n" data-el="Κατάλληλο για το ευρύ κοινό" data-en="Suitable for the general public"></p></div><div class="mbct-course"><p class="mbct-name">Finding Peace in a Frantic World</p><p class="mbct-meta i18n" data-el="6 συναντήσεις · 1 ώρα 30 λεπτά" data-en="6 sessions · 1 hour 30 minutes"></p><p class="i18n" data-el="Για όσους βρίσκονται συχνά υπό πίεση χρόνου και υποχρεώσεων" data-en="For those leading busy lives, burdened by obligations and time constraints"></p></div><div class="mbct-course"><p class="mbct-name">MBCT for Depression</p><p class="mbct-meta i18n" data-el="8 συναντήσεις · 2 ώρες" data-en="8 sessions · 2 hours"></p><p class="i18n" data-el="Για όσους αισθάνονται ότι μπορεί να περνάνε ή έχουν ιστορικό κατάθλιψης" data-en="For those who feel they may be going through, or have a history of, depression"></p></div></li>
 <li class="mbct-cta" style="border-bottom:none;padding-top:14px;padding-left:0;list-style:none"><a class="btn-primary i18n" style="display:inline-block" data-el="Περισσότερες Πληροφορίες &amp; Φόρμα Εκδήλωσης Ενδιαφέροντος" data-en="More Info &amp; Expression of Interest Form" href="https://docs.google.com/forms/d/e/1FAIpQLSeUmCiW3B6SYbUOM1oglaNSWhAh6sSg_o0loU0ldfTS6OPp7w/viewform?usp=header" target="_blank" rel="noopener"></a></li>
 </ul>
 </div>
